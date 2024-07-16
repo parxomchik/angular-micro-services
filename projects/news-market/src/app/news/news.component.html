@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="market-news-container">
+    <h2 class="mb-3">Market News</h2>
+
+  <div class="news-grid">
+    <div
+      *ngFor="let article of articles"
+      class="news-tile"
+    >
+      <h3 routerLink="/news-market/{{ article.id }}">{{ article.title }}</h3>
+      <p>{{ article.content | truncate : 40 }}</p>
+      <small>{{ article.date | date }}</small>
+    </div>
+  </div>
+</div>
+</div>

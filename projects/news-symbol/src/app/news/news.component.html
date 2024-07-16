@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="market-news-container ">
+    <h2>Market News</h2>
+    <button
+      class="btn btn-dark"
+      (click)="addSymbol()"
+    >
+      Add Symbol
+    </button>
+
+    <div
+      class="input-group mb-3 search-bar"
+      *ngIf="showSearchBar"
+    >
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Search stock ticker"
+        #searchInput
+        aria-label="Search stock ticker"
+        aria-describedby="basic-addon2"
+      >
+      <div class="input-group-append">
+        <button
+          class="btn btn-dark"
+          (click)="searchArticles(searchInput.value)"
+          type="button"
+        >Search</button>
+      </div>
+    </div>
+
+    <div class="filters mt-2">
+      <div
+        *ngFor="let ticker of filters"
+        class="filter d-flex align-items-center"
+      >
+        <span>{{ ticker }}</span>
+        <button
+          type="button"
+          class="close ml-2 remove-filter d-flex justify-content-center"
+          aria-label="Close"
+          (click)="removeFilter(ticker)"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="news-grid">
+      <div
+        *ngFor="let article of searchResults"
+        class="news-tile"
+      >
+        <h3 routerLink="/news-symbol/{{ article.id }}">{{ article.title }}</h3>
+        <p>{{ article.content | truncate : 40 }}</p>
+        <small>{{ article.date | date }}</small>
+      </div>
+    </div>
+  </div>
+</div>

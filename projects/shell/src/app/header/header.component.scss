@@ -1,0 +1,42 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+#nav-main-wrapper {
+  align-items: center;
+  flex-direction: row;
+  height: 3.25rem;
+  background-color: #fff;
+  transition: height .1s;
+  box-shadow: 0 .125rem .375rem rgba(0, 0, 0, .15);
+}
+
+.header-row {
+  height: 3.25rem;
+}
+
+.logo {
+  font-size: 26px;
+  text-transform: capitalize;
+  font-weight: normal;
+  cursor: pointer;
+
+  img {
+    height: 26px;
+  }
+}
+
+a {
+  font-size: .9375rem;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #0d0d0d;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid #0d0d0d;
+    text-decoration: none;
+  }
+}
