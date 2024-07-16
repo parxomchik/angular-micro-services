@@ -22,34 +22,17 @@
     "@angular/platform-browser-dynamic": "^18.1.0",
     "@angular/router": "^18.1.0",
     "@angular/service-worker": "^18.1.0",
-    "bootstrap": "^5.2.2",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
     "zone.js": "~0.14.7",
-    "bootstrap-scss": "4.6.1"
+    "bootstrap-scss": "5.3.3"
   },
   "devDependencies": {
     "@angular/cli": "~18.1.0",
     "@angular/compiler-cli": "^18.1.0",
-    "@types/jasmine": "~4.3.0",
-    "jasmine-core": "~4.5.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage": "~2.2.0",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.0.0",
-    "karma-coverage-istanbul-reporter": "~3.0.2",
     "ng-packagr": "^18.1.0",
-    "ngx-build-plus": "^14.0.0",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/node": "^12.11.1",
-    "args-parser": "^1.1.0",
-    "codelyzer": "^6.0.0",
-    "cpx": "^1.5.0",
-    "jasmine-spec-reporter": "^7.0.0",
-    "protractor": "~7.0.0",
+    "ngx-build-plus": "^18.0.0",
+    "@types/node": "^20.14.10",
     "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
     "typescript": "~5.4.5"
   }
 }

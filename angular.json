@@ -89,11 +89,11 @@
 					"builder": "ngx-build-plus:dev-server",
 					"configurations": {
 						"production": {
-							"browserTarget": "news-market:build:production",
+							"buildTarget": "news-market:build:production",
 							"extraWebpackConfig": "projects/news-market/webpack.prod.config.js"
 						},
 						"development": {
-							"browserTarget": "news-market:build:development"
+							"buildTarget": "news-market:build:development"
 						}
 					},
 					"defaultConfiguration": "development",
@@ -106,7 +106,7 @@
 				"extract-i18n": {
 					"builder": "ngx-build-plus:extract-i18n",
 					"options": {
-						"browserTarget": "news-market:build",
+						"buildTarget": "news-market:build",
 						"extraWebpackConfig": "projects/news-market/webpack.config.js"
 					}
 				},
@@ -217,11 +217,11 @@
 					"builder": "ngx-build-plus:dev-server",
 					"configurations": {
 						"production": {
-							"browserTarget": "news-symbol:build:production",
+							"buildTarget": "news-symbol:build:production",
 							"extraWebpackConfig": "projects/news-symbol/webpack.prod.config.js"
 						},
 						"development": {
-							"browserTarget": "news-symbol:build:development"
+							"buildTarget": "news-symbol:build:development"
 						}
 					},
 					"defaultConfiguration": "development",
@@ -234,7 +234,7 @@
 				"extract-i18n": {
 					"builder": "ngx-build-plus:extract-i18n",
 					"options": {
-						"browserTarget": "news-symbol:build",
+						"buildTarget": "news-symbol:build",
 						"extraWebpackConfig": "projects/news-symbol/webpack.config.js"
 					}
 				},
@@ -345,11 +345,11 @@
 					"builder": "ngx-build-plus:dev-server",
 					"configurations": {
 						"production": {
-							"browserTarget": "shell:build:production",
+							"buildTarget": "shell:build:production",
 							"extraWebpackConfig": "projects/shell/webpack.prod.config.js"
 						},
 						"development": {
-							"browserTarget": "shell:build:development"
+							"buildTarget": "shell:build:development"
 						}
 					},
 					"defaultConfiguration": "development",
@@ -362,7 +362,7 @@
 				"extract-i18n": {
 					"builder": "ngx-build-plus:extract-i18n",
 					"options": {
-						"browserTarget": "shell:build",
+						"buildTarget": "shell:build",
 						"extraWebpackConfig": "projects/shell/webpack.config.js"
 					}
 				},
