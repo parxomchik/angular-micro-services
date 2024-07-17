@@ -1,10 +1,11 @@
 const { shareAll, withModuleFederationPlugin } = require('@angular-architects/module-federation/webpack');
+const environment = require('./src/environments/environment');
 
 module.exports = withModuleFederationPlugin({
 
   remotes: {
-    "news-market": "http://localhost:4200/remoteEntry.js",
-    "news-symbol": "http://localhost:4300/remoteEntry.js",    
+    "news-market": environment.remoteNewsMarketUrl,
+    "news-symbol": environment.remoteNewsSymbolUrl,
   },
 
   shared: {
