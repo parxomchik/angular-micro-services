@@ -37,12 +37,10 @@
         <span>{{ ticker }}</span>
         <button
           type="button"
-          class="close ml-2 remove-filter d-flex justify-content-center"
+          class="btn-close ms-2 remove-filter d-flex justify-content-center"
           aria-label="Close"
           (click)="removeFilter(ticker)"
-        >
-          <span aria-hidden="true">&times;</span>
-        </button>
+        ></button>
       </div>
     </div>
 
@@ -53,7 +51,10 @@
       >
         <h3 routerLink="/news-symbol/{{ article.id }}">{{ article.title }}</h3>
         <p>{{ article.content | truncate : 40 }}</p>
-        <small>{{ article.date | date }}</small>
+        <p>
+          <small>{{ article.date | date }}</small>
+        </p>
+        <p class="badge rounded-pill text-bg-dark">{{ article.ticker }}</p>
       </div>
     </div>
   </div>

@@ -39,4 +39,9 @@ a {
     border-bottom: 1px solid #0d0d0d;
     text-decoration: none;
   }
+
+  &.active {
+      border-bottom: 1px solid #0d0d0d;
+      text-decoration: none;
+  }
 }

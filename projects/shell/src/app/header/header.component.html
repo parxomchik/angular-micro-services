@@ -5,7 +5,10 @@
   <div class="container">
     <div class="header-row row align-items-center">
       <div class="header-section col-4">
-        <div class="logo d-flex align-items-center" routerLink="/">
+        <div
+          class="logo d-flex align-items-center"
+          routerLink="/"
+        >
           <img
             src="/assets/icons/investopedia.svg"
             alt=""
@@ -23,8 +26,14 @@
             <a
               class="me-3"
               routerLink="news-market"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
             >market</a>
-            <a routerLink="news-symbol">symbol</a>
+            <a
+              routerLink="news-symbol"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+            >symbol</a>
           </nav>
         </div>
       </div>
